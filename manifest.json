@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "LTT Unlive",
+  "version": "1.0",
+  "description": "Removes the annoying 'Always Live' symbol on the LTT YouTube page.",
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content.js"],
+      "css": ["custom.css"]
+    }
+  ],
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  }
+}
